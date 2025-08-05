@@ -1,10 +1,9 @@
 ﻿name: Deploy Blazor WebAssembly to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main  # or 'master' if you're using that
-
+  push: 
+   branches: [main]
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
