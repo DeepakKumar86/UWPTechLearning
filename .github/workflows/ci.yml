@@ -24,7 +24,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Publish Blazor project
-      run: dotnet publish YourBlazorProjectName -c Release -o release --nologo
+      run: dotnet publish UWPTechLearning -c Release -o release --nologo
 
     - name: Add .nojekyll (to allow folders starting with _)
       run: touch release/wwwroot/.nojekyll
